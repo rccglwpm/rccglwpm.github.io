@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Replace example URL below after the final GitHub Pages/custom domain is known.
+Sitemap: https://YOUR-DOMAIN.example/sitemap.xml

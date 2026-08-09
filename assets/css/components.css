@@ -1,0 +1,40 @@
+.site-header { position: fixed; inset: 0 0 auto; height: var(--header-h); z-index: 100; color: white; transition: background .3s ease, box-shadow .3s ease, height .3s ease; }
+.site-header.scrolled { background: rgba(7,27,43,.94); backdrop-filter: blur(18px); box-shadow: 0 8px 30px rgba(0,0,0,.12); }
+.nav-shell { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.brand { display: inline-flex; align-items: center; gap: 11px; min-width: max-content; }
+.brand img { border-radius: 50%; }
+.brand-copy { display: grid; line-height: 1.08; }
+.brand-copy strong { font-size: 1rem; letter-spacing: -.01em; }
+.brand-copy small { font-size: .67rem; text-transform: uppercase; letter-spacing: .12em; opacity: .72; margin-top: 5px; }
+.desktop-nav { display: flex; align-items: center; gap: 27px; font-size: .88rem; font-weight: 700; }
+.desktop-nav a { opacity: .82; transition: opacity .2s ease, color .2s ease; }
+.desktop-nav a:hover, .desktop-nav a:focus-visible { opacity: 1; color: #9be9e5; }
+.nav-actions { display: flex; align-items: center; gap: 10px; }
+.button { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 0 18px; border: 1px solid transparent; border-radius: 999px; font-weight: 800; font-size: .88rem; transition: transform .2s ease, box-shadow .2s ease, background .2s ease; }
+.button:hover { transform: translateY(-2px); }
+.button-primary { background: var(--water); color: #03252a; box-shadow: 0 9px 28px rgba(32,182,177,.25); }
+.button-primary:hover { background: #42cbc6; }
+.button-ghost { border-color: rgba(255,255,255,.25); color: white; background: rgba(255,255,255,.07); }
+.button-glass { color: white; background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.25); backdrop-filter: blur(10px); }
+.button-outline { color: var(--ink); border-color: #a9bbc2; background: transparent; }
+.button-dark { background: var(--navy); color: white; }
+.button-large { min-height: 52px; padding-inline: 24px; }
+.menu-button { display: none; width: 46px; height: 46px; border: 1px solid rgba(255,255,255,.2); border-radius: 50%; background: rgba(255,255,255,.08); flex-direction: column; justify-content: center; align-items: center; gap: 5px; }
+.menu-button span { width: 19px; height: 2px; background: white; border-radius: 2px; }
+.mobile-menu { position: fixed; inset: var(--header-h) 0 0; background: rgba(7,27,43,.98); }
+.mobile-menu nav { padding: 28px 0; display: grid; }
+.mobile-menu a:not(.button) { color: white; padding: 13px 2px; font-size: 1.1rem; font-weight: 700; border-bottom: 1px solid rgba(255,255,255,.09); }
+.mobile-menu .button { margin-top: 22px; }
+.pill { display: inline-flex; align-items: center; min-height: 27px; padding: 0 10px; border-radius: 999px; background: var(--sky); color: var(--water-dark); text-transform: uppercase; letter-spacing: .08em; font-size: .65rem; font-weight: 900; }
+.text-link { display: inline-flex; gap: 12px; font-weight: 900; color: var(--water-dark); margin-top: 14px; }
+.text-link span { transition: transform .2s ease; }.text-link:hover span { transform: translateX(5px); }
+.section-heading { margin-bottom: 50px; }
+.section-heading.centred { text-align: center; max-width: 770px; margin-inline: auto; }
+.section-heading.centred .eyebrow { justify-content: center; }
+.inline-heading { display: flex; justify-content: space-between; align-items: end; gap: 60px; }
+.inline-heading > * { max-width: 620px; }
+.inline-heading > p { max-width: 420px; margin-bottom: 10px; }
+.toast { position: fixed; z-index: 500; left: 50%; bottom: 24px; transform: translate(-50%, 130%); background: var(--navy); color: white; padding: 13px 18px; border-radius: 12px; box-shadow: var(--shadow); max-width: min(92vw, 560px); opacity: 0; transition: .25s ease; }
+.toast.visible { transform: translate(-50%, 0); opacity: 1; }
+@media (max-width: 1040px) { .desktop-nav { gap: 18px; } .desktop-nav a:nth-last-child(-n+2) { display: none; } }
+@media (max-width: 960px) { .desktop-nav, .desktop-only { display: none; } .menu-button { display: flex; } .inline-heading { display: block; } .inline-heading > p { max-width: 650px; } }

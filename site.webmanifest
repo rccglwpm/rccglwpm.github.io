@@ -1,0 +1,16 @@
+{
+  "name": "RCCG Living Water Middlesbrough",
+  "short_name": "Living Water",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#071b2b",
+  "theme_color": "#071b2b",
+  "icons": [
+    {
+      "src": "assets/images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
