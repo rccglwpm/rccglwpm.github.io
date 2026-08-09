@@ -70,4 +70,4 @@ Plain HTML5, CSS3 and native ES modules. There is no build step, no JavaScript f
 
 ## Licence
 
-Code in this starter is provided under the MIT Licence. Church names, logos, photographs, sermons and other ministry content remain subject to their respective ownership and permissions.
+Code in this starter is provided under the No Licence. Church names, logos, photographs, sermons and other ministry content remain subject to their respective ownership and permissions. All right reserved.
