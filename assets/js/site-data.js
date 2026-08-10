@@ -10,7 +10,7 @@ export const siteData = {
     address: '109B Marton Road, Middlesbrough, TS1 2DU',
     phoneDisplay: '07904 776789',
     phoneHref: '+447904776789',
-    email: 'rccglwpm@gmail.com',
+    email: 'rccglwfollowupteam@rccglwpm.org.uk',
     charityNumber: '1194680',
     residentPastor: 'Pastor Dr Ken Duru'
   },
