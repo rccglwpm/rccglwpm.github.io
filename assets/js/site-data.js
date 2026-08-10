@@ -17,7 +17,7 @@ export const siteData = {
   links: {
     facebook: 'https://www.facebook.com/RCCGLWMiddlesbrough/',
     instagram: 'https://www.instagram.com/rccglwpm/',
-    youtube: 'https://www.youtube.com/@rccglivingwatermiddlesbrou8286',
+    youtube: 'https://www.youtube.com/@rccglivingwatermiddlesbrou8286/streams',
     directions: 'https://www.google.com/maps/search/?api=1&query=109B+Marton+Road%2C+Middlesbrough%2C+TS1+2DU',
     giving: '', // Add approved giving URL. Empty = contact fallback.
     formEndpoint: '', // Optional Formspree/Getform endpoint. Empty = mailto fallback.
