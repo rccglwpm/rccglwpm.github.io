@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Replace YOUR-DOMAIN.example after deployment -->
-  <url><loc>https://YOUR-DOMAIN.example/</loc></url>
-  <url><loc>https://YOUR-DOMAIN.example/privacy.html</loc></url>
-  <url><loc>https://YOUR-DOMAIN.example/safeguarding.html</loc></url>
-  <url><loc>https://YOUR-DOMAIN.example/accessibility.html</loc></url>
+  <url><loc>https://rccglwpm.org.uk/</loc></url>
+  <url><loc>https://rccglwpm.org.uk/privacy.html</loc></url>
+  <url><loc>https://rccglwpm.org.uk/safeguarding.html</loc></url>
+  <url><loc>https://rccglwpm.org.uk/accessibility.html</loc></url>
 </urlset>
