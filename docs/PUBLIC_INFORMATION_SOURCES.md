@@ -26,9 +26,6 @@ Checked in August 2026. These sources were used only to populate information tha
 7. YouTube: https://www.youtube.com/@rccglivingwatermiddlesbrou8286
 8. Charity Commission (charity number 1194680): https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/5178521/charity-overview
 
-## Address discrepancy to resolve
-
-The older WordPress site and some Charity Commission material display **125 Marton Road**, while more recent 2025–2026 church social posts and the church dedication material use **109B Marton Road, TS1 2DU**. The starter website uses 109B because it is the venue repeatedly advertised in current public activity. Church leadership should confirm the formal correspondence address and worship venue and then update `assets/js/site-data.js`, the footer and policy pages if necessary.
 
 ## Content intentionally not inferred
 
