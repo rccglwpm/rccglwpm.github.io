@@ -51,16 +51,16 @@ export const siteData = {
     { icon: '✦', title: 'Children', text: 'Safe, joyful, age-appropriate spaces where children discover God’s love and His Word.', image: 'assets/images/ministry-children.jpg' },
     { icon: '↗', title: 'Youth', text: 'Faith, friendship, purpose and relevant discipleship for teenagers and young adults.', image: 'assets/images/ministry-youth.jpg' },
     { icon: '◉', title: 'Women', text: 'Friendship, prayer, encouragement and spiritual growth for women at every life stage.', image: 'assets/images/ministry-women.jpg' },
-    { icon: '◇', title: 'Men', text: 'Brotherhood, discipleship and practical encouragement for men to grow and lead well.', image: 'assets/images/ministry-men.jpeg' },
+    { icon: '◇', title: 'Men', text: 'The excellent men. Brotherhood, discipleship and practical encouragement for men to grow and lead well.', image: 'assets/images/ministry-men.jpeg' },
     { icon: '♫', title: 'Choir & Worship', text: 'Serving the church through music, worship, creativity and the arts.', image: 'assets/images/ministry-worship.jpg' },
     { icon: '▣', title: 'Media & Technical', text: 'Helping people connect through sound, visuals, livestreaming and digital communication.', image: 'assets/images/ministry-media.svg' },
     { icon: '☼', title: 'Sunday School', text: 'Structured Bible learning that strengthens foundations and encourages mature faith.', image: 'assets/images/ministry-school.svg' },
     { icon: '♡', title: 'Community Care', text: 'Practical support, food assistance, evangelism and outreach to the wider community.', image: 'assets/images/ministry-care.svg' }
   ],
   messages: [
-    { label: 'SERMON', title: 'Add a Sunday message', meta: 'YouTube · 35 min', url: 'https://www.youtube.com/@rccglivingwatermiddlesbrou8286' },
-    { label: 'BIBLE STUDY', title: 'Add a Digging Deep teaching', meta: 'YouTube · 52 min', url: 'https://www.youtube.com/@rccglivingwatermiddlesbrou8286' },
-    { label: 'WORSHIP', title: 'Add a worship moment', meta: 'YouTube · 12 min', url: 'https://www.youtube.com/@rccglivingwatermiddlesbrou8286' }
+    { label: 'SERMON', title: 'Listen to Sunday messages', meta: 'YouTube · full lenght sunday service', url: 'https://www.youtube.com/@rccglivingwatermiddlesbrou8286/streams' },
+    { label: 'BIBLE STUDY', title: 'Listen to Digging Deep teaching', meta: 'Full length · Bible Study', url: 'https://www.youtube.com/@rccglivingwatermiddlesbrou8286/streams' },
+    { label: 'WORSHIP', title: 'Experience real worship moment', meta: 'Live services · full length', url: 'https://www.youtube.com/@rccglivingwatermiddlesbrou8286/streams' }
   ],
   events: [
     { month: 'ADD', day: '01', title: 'Upcoming church event', text: 'Replace with a real event title, date, time and short description.', type: 'Church-wide' },
