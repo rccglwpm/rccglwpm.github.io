@@ -48,11 +48,11 @@ export const siteData = {
     }
   ],
   ministries: [
-    { icon: '✦', title: 'Children', text: 'Safe, joyful, age-appropriate spaces where children discover God’s love and His Word.', image: 'assets/images/ministry-children.svg' },
-    { icon: '↗', title: 'Youth', text: 'Faith, friendship, purpose and relevant discipleship for teenagers and young adults.', image: 'assets/images/ministry-youth.svg' },
+    { icon: '✦', title: 'Children', text: 'Safe, joyful, age-appropriate spaces where children discover God’s love and His Word.', image: 'assets/images/ministry-children.jpg' },
+    { icon: '↗', title: 'Youth', text: 'Faith, friendship, purpose and relevant discipleship for teenagers and young adults.', image: 'assets/images/ministry-youth.jpg' },
     { icon: '◉', title: 'Women', text: 'Friendship, prayer, encouragement and spiritual growth for women at every life stage.', image: 'assets/images/ministry-women.svg' },
     { icon: '◇', title: 'Men', text: 'Brotherhood, discipleship and practical encouragement for men to grow and lead well.', image: 'assets/images/ministry-men.svg' },
-    { icon: '♫', title: 'Choir & Worship', text: 'Serving the church through music, worship, creativity and the arts.', image: 'assets/images/ministry-worship.svg' },
+    { icon: '♫', title: 'Choir & Worship', text: 'Serving the church through music, worship, creativity and the arts.', image: 'assets/images/ministry-worship.jpeg' },
     { icon: '▣', title: 'Media & Technical', text: 'Helping people connect through sound, visuals, livestreaming and digital communication.', image: 'assets/images/ministry-media.svg' },
     { icon: '☼', title: 'Sunday School', text: 'Structured Bible learning that strengthens foundations and encourages mature faith.', image: 'assets/images/ministry-school.svg' },
     { icon: '♡', title: 'Community Care', text: 'Practical support, food assistance, evangelism and outreach to the wider community.', image: 'assets/images/ministry-care.svg' }
