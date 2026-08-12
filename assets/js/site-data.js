@@ -54,8 +54,8 @@ export const siteData = {
     { icon: '◇', title: 'Men', text: 'The excellent men. Brotherhood, discipleship and practical encouragement for men to grow and lead well.', image: 'assets/images/ministry-men.jpeg' },
     { icon: '♫', title: 'Choir & Worship', text: 'Serving the church through music, worship, creativity and the arts.', image: 'assets/images/ministry-worship.jpg' },
     { icon: '▣', title: 'Media & Technical', text: 'Helping people connect through sound, visuals, livestreaming and digital communication.', image: 'assets/images/ministry-media.jpeg' },
-    { icon: '☼', title: 'Sunday School', text: 'Structured Bible learning that strengthens foundations and encourages mature faith.', image: 'assets/images/ministry-school.svg' },
-    { icon: '♡', title: 'Community Care', text: 'Practical support, food assistance, evangelism and outreach to the wider community.', image: 'assets/images/ministry-care.svg' }
+    { icon: '☼', title: 'Sunday School', text: 'Structured Bible learning that strengthens foundations and encourages mature faith.', image: 'assets/images/ministry-school.jpg' },
+    { icon: '♡', title: 'Community Care', text: 'Practical support, food assistance, evangelism and outreach to the wider community.', image: 'assets/images/ministry-care.jpg' }
   ],
   messages: [
     { label: 'SERMON', title: 'Listen to Sunday messages', meta: 'YouTube · full lenght sunday service', url: 'https://www.youtube.com/@rccglivingwatermiddlesbrou8286/streams' },
