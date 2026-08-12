@@ -48,7 +48,7 @@ export const siteData = {
     }
   ],
   ministries: [
-    { icon: '✦', title: 'Children', text: 'Safe, joyful, age-appropriate spaces where children discover God’s love and His Word.', image: 'assets/images/ministry-children.jpg' },
+    { icon: '✦', title: 'Children', text: 'Safe, joyful, age-appropriate spaces where children discover God’s love and His Word. , image: 'assets/images/ministry-children.jpg' },
     { icon: '↗', title: 'Youth', text: 'Faith, friendship, purpose and relevant discipleship for teenagers and young adults.', image: 'assets/images/ministry-youth.jpg' },
     { icon: '◉', title: 'Women', text: 'Friendship, prayer, encouragement and spiritual growth for women at every life stage.', image: 'assets/images/ministry-women.jpg' },
     { icon: '◇', title: 'Men', text: 'The excellent men. Brotherhood, discipleship and practical encouragement for men to grow and lead well.', image: 'assets/images/ministry-men.jpeg' },
