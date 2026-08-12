@@ -1,64 +1,118 @@
 # Content update guide
 
-The website is intentionally easy to maintain without a CMS.
+The website is deliberately designed so routine content changes do not require a CMS or a framework build process.
 
-## The main file to edit
+## 1. Central configuration
 
-Open `assets/js/site-data.js`. This contains:
+Open `assets/js/site-data.js`. It contains:
 
-- Church contact details
-- Social links
-- Service schedule
+- Church contact details and time zone
+- Social, YouTube, directions and EvaeXtra check-in links
+- Recurring service schedule
 - Ministries
-- Message/sermon cards
-- Event cards
-- Form and newsletter integration placeholders
-- Giving URL placeholder
+- Gallery slides
+- Sermon/message links
+- Events
+- Giving URL
+- Optional form endpoint
 
-## Replace image placeholders
+## 2. Service times and countdown
 
-The placeholder SVG files are under `assets/images/`. You can replace them with JPG, PNG, WebP or AVIF files. Then update the corresponding path in `index.html` or `assets/js/site-data.js`.
+Each service includes:
 
-Recommended sizes:
+```js
+{
+  weekday: 0,
+  day: 'Sunday',
+  start: '10:00',
+  time: '10:00 AM',
+  title: 'Sunday Worship',
+  // ...
+}
+```
 
-- Hero: 1920 × 1200 or larger, landscape
-- Pastor: 1000 × 1250 portrait
-- Ministry cards: 1200 × 750 landscape
-- Sermon thumbnail: 1280 × 720
-- Open Graph sharing image: 1200 × 630, preferably PNG/JPG
+`weekday` uses JavaScript numbering: Sunday `0`, Monday `1`, Tuesday `2`, Wednesday `3`, Thursday `4`, Friday `5`, Saturday `6`.
 
-Use church-owned or appropriately licensed images and add meaningful `alt` text.
+`start` must use 24-hour `HH:MM` format because the intelligent countdown reads it. `time` is the friendly version displayed to visitors.
 
-## Adding a real event
+The calculation is fixed to `Europe/London`, so a visitor abroad still sees the correct Middlesbrough service time and BST/GMT changes are handled automatically.
 
-In `assets/js/site-data.js`, replace an object in `events`:
+## 3. EvaeXtra attendance link
+
+Set this once under `links`:
+
+```js
+checkin: 'https://evaextra.com/checkin'
+```
+
+The same configured URL is reused across the site. The HTML also contains direct fallback `href` values so the attendance link still works if JavaScript fails.
+
+## 4. Gallery
+
+Add, remove or reorder entries in `siteData.gallery`:
+
+```js
+{
+  image: 'assets/images/web/example.webp',
+  alt: 'Meaningful description of the photograph',
+  eyebrow: 'Community',
+  title: 'A short gallery headline',
+  text: 'One concise supporting sentence.'
+}
+```
+
+The slideshow advances every six seconds when motion is allowed. It pauses on hover/focus, offers pause/play controls, supports arrow keys and pointer swipes, and honours `prefers-reduced-motion`.
+
+## 5. Photographs
+
+The source photographs are retained under `assets/images/`. The optimised copies used by the website are in `assets/images/web/`.
+
+Recommended display assets:
+
+- Hero: approximately 1800 px on the longest edge
+- Gallery / ministry: approximately 1400–1800 px on the longest edge
+- WebP format for photographic content
+- Keep quality high enough for faces and textural detail without shipping multi-megabyte originals
+
+Always use church-owned or properly authorised images. Be particularly careful about consent and safeguarding considerations for images of children and young people.
+
+## 6. Events
+
+The site intentionally shows a social-media follow-up when `events` is empty, rather than inventing dates.
+
+Add an approved event like this:
 
 ```js
 {
   month: 'SEP',
   day: '13',
-  title: 'Example event title',
-  text: 'Short event description.',
+  title: 'Event title',
+  text: 'Short approved description.',
   type: 'Church-wide'
 }
 ```
 
-## Connect the contact form
+## 7. Contact form
 
-Set `links.formEndpoint` to a Formspree, Getform or other church-approved endpoint. Until then, the form safely opens the visitor's email application addressed to `rccglwpm@gmail.com`.
+`links.formEndpoint` is empty by default. In that state, the form opens the visitor's email client and the website does not store the submission.
 
-If a form provider is introduced, update the Privacy Notice.
+If the church adopts a hosted form provider, set the approved endpoint and update `privacy.html` before publishing the change. Never commit API secrets or private keys to a public GitHub repository.
 
-## Giving
+## 8. Giving
 
-Set `links.giving` only after the church has approved the payment page. Never place raw secret keys in this repository. Public payment URLs are fine; private API secrets are not.
+Set `links.giving` only after an approved public payment/giving URL is available. Do not place bank credentials, API secrets or private payment keys in this repository.
 
-## Deploying to GitHub Pages
+## 9. Privacy and cookies
 
-1. Create a GitHub repository.
-2. Upload all project files to the repository root.
-3. Push to the `main` branch.
-4. In GitHub: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-5. The included `.github/workflows/deploy-pages.yml` workflow publishes the site.
-6. If using a custom domain, copy `CNAME.example` to `CNAME`, replace the text with the real domain, and configure the domain DNS.
-7. Replace `YOUR-DOMAIN.example` in `robots.txt` and `sitemap.xml`.
+At present the site deliberately avoids analytics, advertising trackers and persistent browser storage. The gallery and countdown need no cookies. Third-party services are linked rather than embedded.
+
+Reassess privacy/cookie requirements before adding Google Analytics, Meta Pixel, embedded YouTube/Maps, advertising tags, hosted chat widgets, donation widgets or similar technologies.
+
+## 10. Deploying to GitHub Pages
+
+1. Keep the project at the repository root.
+2. Push to `main`.
+3. In **Settings → Pages**, choose **GitHub Actions** under Build and deployment.
+4. `.github/workflows/deploy-pages.yml` uploads and deploys the static site.
+5. `CNAME` currently contains `rccglwpm.org.uk`; ensure DNS matches the GitHub Pages custom-domain configuration.
+6. Test both the GitHub Pages URL and custom domain after deployment.

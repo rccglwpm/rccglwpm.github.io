@@ -1,36 +1,30 @@
 # RCCG Living Water Middlesbrough — Modern GitHub Pages Website
 
-A lightweight, responsive, accessible and GitHub-ready church website starter designed for **RCCG Living Water Middlesbrough, UK**.
+A lightweight, responsive and accessible church website for **RCCG Living Water Middlesbrough, UK**, designed to deploy directly to GitHub Pages without a JavaScript framework or build step.
 
 ## What is included
 
-- Modern responsive homepage and navigation
-- New visitor pathway / plan-a-visit section
-- About, mission and values presentation
-- Recurring service schedule
+- Modern responsive homepage and mobile navigation
+- Real church photography with optimised WebP delivery copies
+- Intelligent next-service countdown using the `Europe/London` time zone, including BST/GMT changes
+- Recurring Sunday, Wednesday and Friday service schedule
+- EvaeXtra attendance/check-in links throughout the visitor journey
+- Accessible auto-advancing photo gallery with pause, arrows, dots, keyboard and swipe controls
+- Reduced-motion support
+- New visitor / plan-a-visit pathway
 - Ministry directory rendered from one central data file
-- Community care / outreach presentation
-- Resident pastor section
-- Sermon / YouTube section
-- Event cards
-- Giving section with safe placeholder rather than fabricated banking information
-- Contact form with mail fallback and optional hosted-form endpoint
-- Newsletter integration placeholder
-- Directions link
-- Social media links
-- Privacy, safeguarding and accessibility starter pages
-- SEO metadata, web manifest, sitemap and robots file
+- Resident pastor, community, sermon and giving sections
+- Honest event empty state rather than fabricated event information
+- Contact form with email fallback and optional hosted-form endpoint
+- Social media, YouTube and directions links
+- Privacy & cookies, safeguarding and accessibility pages
+- SEO metadata, canonical URL, JSON-LD, web manifest, sitemap and robots file
 - GitHub Pages deployment workflow
-- Local vector image placeholders — no stock-image licence dependency
-- Public-source documentation and content update guide
-
-## Design principles
-
-The design uses a water-inspired visual language, deep navy, teal/aqua and warm gold accents. It is intentionally contemporary without feeling corporate, with a strong emphasis on welcome, community, worship and easy next steps.
+- Persistent “Powered by evaextra.com” footer attribution
 
 ## Quick start
 
-No framework or package installation is required.
+No package installation is required.
 
 ```bash
 python3 -m http.server 8080
@@ -38,36 +32,76 @@ python3 -m http.server 8080
 
 Then open `http://localhost:8080`.
 
-## Update church content
+Do not test the site by double-clicking `index.html` and opening it as `file://...`; native ES modules are designed to be served over HTTP.
+
+## Main content configuration
 
 Start with:
 
 - `assets/js/site-data.js`
 - `docs/CONTENT_UPDATE_GUIDE.md`
-- `docs/PUBLIC_INFORMATION_SOURCES.md`
+- `docs/ENHANCEMENTS.md`
+
+The central data file controls church contact details, services, ministries, gallery content, messages, external links and event data.
+
+## Image strategy
+
+The original photographs remain in `assets/images/`. Optimised website copies are stored in `assets/images/web/` and are used by the homepage. This keeps the original source files available while substantially reducing page weight.
+
+When replacing a photograph, create an appropriately sized WebP version and update the relevant path in `index.html` or `assets/js/site-data.js`. Use meaningful alternative text and only publish photographs the church is authorised to use.
+
+## Attendance / EvaeXtra
+
+The attendance URL is configured once in `assets/js/site-data.js`:
+
+```js
+checkin: 'https://evaextra.com/checkin'
+```
+
+Links are placed in the main navigation, hero, service countdown, quick actions, visit section, connection area, footer and floating check-in control.
+
+## Service countdown
+
+Recurring service definitions live in `assets/js/site-data.js` and include a numeric weekday plus 24-hour `start` time. The countdown logic is in `assets/js/modules/services.js` and calculates dates in `Europe/London` rather than relying on the visitor's local time zone.
+
+If a service time changes, update both `start` and the visitor-facing `time` value in the data file.
+
+## Gallery
+
+Gallery slides are configured in the `gallery` array in `assets/js/site-data.js`. Each item requires an image, alternative text, short eyebrow, title and supporting text.
+
+The gallery automatically pauses for visitors who request reduced motion. It can also be controlled with pause/play, arrow keys, previous/next buttons, dots and touch/pointer swipes.
+
+## Privacy and cookies
+
+The current implementation does not add analytics, advertising cookies, tracking pixels or persistent browser storage. The countdown and gallery do not need cookies. External media and attendance services are linked rather than embedded. If analytics, tracking, embedded media, hosted forms or other third-party technologies are introduced, review `privacy.html` and the site's consent requirements before deployment.
 
 ## Important launch checklist
 
-- Confirm 109B Marton Road is the correct current worship venue and separately confirm the registered/correspondence address.
-- Replace all placeholder illustrations with authorised church photographs where desired.
-- Obtain and add the official approved RCCG / parish logo rather than assuming logo usage rights.
-- Replace the pastor placeholder portrait and placeholder welcome text.
-- Confirm Sunday, Wednesday and Friday times before launch.
-- Add approved event information.
-- Add an approved online giving URL if required.
-- Replace the safeguarding placeholder with the church's current approved policy and safeguarding contacts.
-- Review the privacy notice against actual form, newsletter, analytics, livestream and payment services.
-- Configure a real domain in `robots.txt`, `sitemap.xml` and optionally `CNAME`.
-- Test keyboard navigation, mobile layouts and contact links after content changes.
+- Confirm all service times and venue details remain current.
+- Confirm the church is authorised to publish every photograph used on the site, especially images containing children or young people.
+- Replace or approve the current logo asset as appropriate.
+- Add only approved and current event information.
+- Add an approved giving URL if online giving is required.
+- **Replace the safeguarding launch notice with the church's approved safeguarding policy and dedicated contacts.**
+- Confirm final data-controller wording, retention arrangements and any processors in the privacy notice.
+- Test navigation, keyboard use, reduced-motion behaviour, gallery, countdown and attendance links after content changes.
+- Review the site after adding any analytics, livestream embeds, donation providers or hosted forms.
 
-## Public data provenance
+## GitHub Pages deployment
 
-The project uses current public church/social/Charity Commission information where it could be reasonably verified and uses explicit placeholders elsewhere. See `docs/PUBLIC_INFORMATION_SOURCES.md`.
+The repository includes `.github/workflows/deploy-pages.yml`.
+
+1. Push the project to the `main` branch.
+2. In GitHub, open **Settings → Pages**.
+3. Under **Build and deployment**, select **GitHub Actions** as the source.
+4. Push a change or manually run the **Deploy to GitHub Pages** workflow.
+5. The existing `CNAME` is configured for `rccglwpm.org.uk`; ensure the domain's DNS records are correctly pointed at GitHub Pages before relying on the custom domain.
 
 ## Technology
 
-Plain HTML5, CSS3 and native ES modules. There is no build step, no JavaScript framework and no runtime dependency, keeping GitHub Pages deployment fast and inexpensive.
+Plain HTML5, CSS3 and native ES modules. There is no runtime dependency and no frontend framework, keeping the site straightforward to maintain and suitable for GitHub Pages.
 
-## Licence
+## Licence and content rights
 
-Code in this starter is provided under the No Licence. Church names, logos, photographs, sermons and other ministry content remain subject to their respective ownership and permissions. All right reserved.
+Code in this project is not automatically licensed for redistribution. Church names, logos, photographs, sermons and other ministry content remain subject to their respective ownership and permissions.

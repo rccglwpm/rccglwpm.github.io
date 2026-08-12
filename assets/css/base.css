@@ -46,3 +46,10 @@ p { color: var(--ink-2); }
 [data-reveal].revealed { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; transition: none !important; } [data-reveal] { opacity: 1; transform: none; } }
 @media (max-width: 760px) { .container { width: min(calc(100% - 28px), var(--container)); } .section { padding: 76px 0; } h2 { font-size: clamp(2.1rem, 10vw, 3rem); } }
+
+/* Enhanced motion and interaction — always disabled when visitors prefer reduced motion. */
+[data-reveal] { transition-delay: var(--reveal-delay, 0ms); }
+:focus-visible { outline: 3px solid #f5b85a; outline-offset: 3px; }
+@media (hover:hover) {
+  a { -webkit-tap-highlight-color: transparent; }
+}

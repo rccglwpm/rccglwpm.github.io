@@ -13,3 +13,11 @@ body { background: #f7faf9; }
 .legal-shell a { color:#0a8886; text-decoration:underline; text-underline-offset:3px; }
 .simple-footer { padding:28px 0; background:#04131f; color:rgba(255,255,255,.55); font-size:.75rem; }
 .simple-footer .container { display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+.simple-footer a { color:#9be9e5; text-decoration:none; font-weight:800; }
+.simple-footer a:hover { text-decoration:underline; text-underline-offset:3px; }
+.legal-shell .status-warning { background:#fff1d8; color:#8a5a05; }
+@media (max-width: 620px) {
+  .simple-header .container { align-items:flex-start; }
+  .simple-header .brand-copy small { font-size:.66rem; }
+  .legal-main { padding:52px 0 78px; }
+}

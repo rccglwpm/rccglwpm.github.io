@@ -8,14 +8,41 @@
   <meta property="og:title" content="RCCG Living Water Middlesbrough" />
   <meta property="og:description" content="A place to belong. A faith to live. A city to serve." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/images/og-placeholder.svg" />
+  <meta property="og:image" content="https://rccglwpm.org.uk/assets/images/hero-community.jpeg" />
+  <meta property="og:image:alt" content="RCCG Living Water Middlesbrough church family" />
+  <meta property="og:url" content="https://rccglwpm.org.uk/" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://rccglwpm.org.uk/" />
+  <link rel="preload" as="image" href="assets/images/web/hero-community.webp" fetchpriority="high" />
   <title>RCCG Living Water Middlesbrough</title>
   <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
   <link rel="manifest" href="site.webmanifest" />
   <link rel="stylesheet" href="assets/css/base.css" />
   <link rel="stylesheet" href="assets/css/components.css" />
   <link rel="stylesheet" href="assets/css/home.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Church",
+    "name": "RCCG Living Water Middlesbrough",
+    "url": "https://rccglwpm.org.uk/",
+    "telephone": "+447904776789",
+    "email": "rccglwfollowupteam@rccglwpm.org.uk",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "109B Marton Road",
+      "addressLocality": "Middlesbrough",
+      "postalCode": "TS1 2DU",
+      "addressCountry": "GB"
+    },
+    "sameAs": [
+      "https://www.facebook.com/RCCGLWMiddlesbrough/",
+      "https://www.instagram.com/rccglwpm/",
+      "https://www.youtube.com/@rccglivingwatermiddlesbrou8286"
+    ]
+  }
+  </script>
   <script type="module" src="assets/js/main.js"></script>
 </head>
 <body>
@@ -26,7 +53,7 @@
         <img src="assets/images/logo-placeholder.svg" alt="" width="48" height="48" />
         <span class="brand-copy">
           <strong>Living Water</strong>
-          <small>RCCG · Middlesbrough, United Kingdowm</small>
+          <small>RCCG · Middlesbrough, United Kingdom</small>
         </span>
       </a>
       <nav class="desktop-nav" aria-label="Primary navigation">
@@ -34,11 +61,12 @@
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#ministries">Ministries</a>
+        <a href="#gallery">Gallery</a>
         <a href="#community">Community</a>
         <a href="#messages">Messages</a>
       </nav>
       <div class="nav-actions">
-        <a class="button button-ghost desktop-only" href="#contact">Contact</a>
+        <a href="https://evaextra.com/checkin" class="button button-checkin desktop-only" data-checkin-link target="_blank" rel="noopener">Check in</a>
         <a class="button button-primary desktop-only" href="#visit">Plan a visit</a>
         <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>
           <span></span><span></span><span></span>
@@ -51,9 +79,11 @@
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#ministries">Ministries</a>
+        <a href="#gallery">Gallery</a>
         <a href="#community">Community</a>
         <a href="#messages">Messages</a>
         <a href="#contact">Contact</a>
+        <a href="https://evaextra.com/checkin" class="button button-checkin" data-checkin-link target="_blank" rel="noopener">✓ Check in / attendance</a>
         <a class="button button-primary" href="#visit">Plan a visit</a>
       </nav>
     </div>
@@ -62,8 +92,7 @@
   <main id="main">
     <section class="hero" id="home" aria-labelledby="hero-title">
       <div class="hero-media" aria-hidden="true">
-        <!-- <img src="assets/images/hero-community.svg" alt="" /> -->
-        <img src="assets/images/hero-community.jpeg" alt="" />
+        <img src="assets/images/web/hero-community.webp" alt="" width="1078" height="783" fetchpriority="high" decoding="async" />
         <div class="hero-wash"></div>
       </div>
       <div class="container hero-grid">
@@ -73,30 +102,34 @@
           <p class="hero-lead">Come as you are and discover a warm, Christ-centred community where people of every generation can worship, grow, build meaningful relationships and make a difference.</p>
           <div class="hero-actions">
             <a class="button button-primary button-large" href="#visit">Plan your first visit</a>
-            <a class="button button-glass button-large" data-live-link href="#messages">Watch online</a>
+            <a href="https://evaextra.com/checkin" class="button button-glass button-large" data-checkin-link target="_blank" rel="noopener">✓ Check in / attendance</a>
+            <a href="https://www.youtube.com/@rccglivingwatermiddlesbrou8286/streams" class="hero-watch-link" data-live-link target="_blank" rel="noopener">Watch online <span>↗</span></a>
           </div>
           <div class="hero-meta" aria-label="Key church information">
             <div><span class="meta-icon">◷</span><span><strong>Sunday worship</strong><small data-sunday-time>10:00 AM</small></span></div>
             <div><span class="meta-icon">⌖</span><span><strong>Middlesbrough</strong><small>109B Marton Road · TS1 2DU</small></span></div>
           </div>
         </div>
-        <aside class="next-card" data-reveal aria-label="Next gathering">
+        <aside class="next-card" data-reveal aria-label="Service and attendance information">
           <div class="next-card-top">
-            <p class="kicker">This week at Living Water</p>
-            <span class="live-dot"><i></i> You are invited</span>
+            <p class="kicker">Your next gathering</p>
+            <span class="live-dot"><i></i> <span data-service-status>Next gathering</span></span>
           </div>
           <div class="next-card-main">
-            <span class="date-tile"><strong data-next-service-day>SUN</strong><b data-next-service-date>—</b><small data-next-service-month>—</small></span>
+            <span class="date-tile"><strong data-next-service-day>—</strong><b data-next-service-date>—</b><small data-next-service-month>—</small></span>
             <div>
-              <h2>Sunday Worship Service</h2>
-              <p><span data-sunday-time>10:00 AM</span> · In person</p>
-              <a href="#visit">What to expect →</a>
+              <h2 data-next-service-title>Next service</h2>
+              <p><span data-next-service-date-long>Loading date…</span> · <span data-next-service-time>—</span></p>
+              <div class="mini-countdown" aria-hidden="true">
+                <span><b data-mini-days>0</b><small>d</small></span>
+                <span><b data-mini-hours>00</b><small>h</small></span>
+                <span><b data-mini-minutes>00</b><small>m</small></span>
+                <span><b data-mini-seconds>00</b><small>s</small></span>
+              </div>
+              <div class="next-card-actions"><a href="https://evaextra.com/checkin" data-checkin-link target="_blank" rel="noopener">Mark attendance ↗</a><a href="#services">Service details →</a></div>
             </div>
           </div>
-          <div class="next-card-footer">
-            <span>Wednesday · 6:00 PM <b>Digging Deep</b></span>
-            <span>Friday · 6:00 PM <b>Corporate Prayer</b></span>
-          </div>
+          <div class="next-card-footer" data-upcoming-mini></div>
         </aside>
       </div>
       <div class="water-mark" aria-hidden="true"></div>
@@ -105,17 +138,48 @@
     <section class="welcome-strip" aria-label="Quick links">
       <div class="container quick-grid">
         <a href="#visit" data-reveal><span class="quick-icon">⌖</span><span><strong>Visit this Sunday</strong><small>Directions, times & what to expect</small></span><b>→</b></a>
-        <a href="#community" data-reveal><span class="quick-icon">♡</span><span><strong>Need prayer?</strong><small>Share a prayer request confidentially</small></span><b>→</b></a>
+        <a href="https://evaextra.com/checkin" data-checkin-link target="_blank" rel="noopener" data-reveal><span class="quick-icon">✓</span><span><strong>Mark attendance</strong><small>Check in securely with EvaeXtra</small></span><b>↗</b></a>
+        <a href="#community" data-reveal><span class="quick-icon">♡</span><span><strong>Need prayer?</strong><small>Connect with the church for prayer and care</small></span><b>→</b></a>
         <a href="#ministries" data-reveal><span class="quick-icon">◎</span><span><strong>Find your people</strong><small>Children, youth, men, women & more</small></span><b>→</b></a>
-        <a href="#give" data-reveal><span class="quick-icon">↗</span><span><strong>Give & support</strong><small>Help advance ministry and community care</small></span><b>→</b></a>
+      </div>
+    </section>
+
+    <section class="service-countdown-section" id="next-service" aria-labelledby="countdown-title">
+      <div class="container">
+        <div class="countdown-shell" data-countdown-shell data-reveal>
+          <div class="countdown-copy">
+            <p class="eyebrow light">Next scheduled gathering</p>
+            <span class="countdown-status"><i></i><span data-service-status>Next gathering</span></span>
+            <h2 id="countdown-title" data-countdown-heading>Loading the next service…</h2>
+            <p data-countdown-supporting>Times are calculated automatically in Europe/London time.</p>
+            <div class="countdown-actions">
+              <a href="https://evaextra.com/checkin" class="button button-primary button-large" data-checkin-link target="_blank" rel="noopener">✓ Mark attendance</a>
+              <a class="button button-glass button-large" href="#services">View weekly services</a>
+            </div>
+            <small class="countdown-zone">Automatically calculated in Europe/London time, including BST/GMT changes.</small>
+          </div>
+          <div class="countdown-display" aria-label="Countdown to the next scheduled church gathering">
+            <p data-countdown-label>Time until the next scheduled gathering</p>
+            <div class="countdown-digits">
+              <span><b data-countdown-days>0</b><small>Days</small></span>
+              <i>:</i>
+              <span><b data-countdown-hours>00</b><small>Hours</small></span>
+              <i>:</i>
+              <span><b data-countdown-minutes>00</b><small>Minutes</small></span>
+              <i>:</i>
+              <span><b data-countdown-seconds>00</b><small>Seconds</small></span>
+            </div>
+            <div class="countdown-next-line"><strong data-next-service-title>Next service</strong><span data-next-service-date-long>—</span><span data-next-service-time>—</span></div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="section story-section" id="new-here">
       <div class="container split-grid">
         <div class="image-stack" data-reveal>
-          <div class="image-card image-card-main"><img src="assets/images/worship-placeholder.jpg" alt="Church community worship placeholder — replace with an authorised Living Water photograph" loading="lazy" /></div>
-          <div class="image-card image-card-small"><img src="assets/images/welcome-placeholder.jpg" alt="Church welcome team placeholder — replace with an authorised Living Water photograph" loading="lazy" /></div>
+          <div class="image-card image-card-main"><img src="assets/images/web/worship-community.webp" alt="A joyful worshipper during a Living Water church gathering" loading="lazy" /></div>
+          <div class="image-card image-card-small"><img src="assets/images/web/welcome-family.webp" alt="A family walking together in the local community" loading="lazy" /></div>
           <span class="floating-note"><strong>You belong here</strong><small>No perfect people. Just grace, growth and community.</small></span>
         </div>
         <div class="content-block" data-reveal>
@@ -180,6 +244,16 @@
       </div>
     </section>
 
+    <section class="section gallery-section" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-heading inline-heading" data-reveal>
+          <div><p class="eyebrow">Moments at Living Water</p><h2 id="gallery-title">Church life, beautifully lived.</h2></div>
+          <p>A glimpse of worship, friendship, family and service in the Living Water community.</p>
+        </div>
+        <div class="gallery" data-gallery data-reveal tabindex="0" aria-label="Living Water photo gallery slideshow"></div>
+      </div>
+    </section>
+
     <section class="section community-section" id="community">
       <div class="container community-grid">
         <div class="community-copy" data-reveal>
@@ -193,7 +267,7 @@
           </div>
         </div>
         <div class="community-visual" data-reveal>
-          <img src="assets/images/community-care-placeholder.jpg" alt="Community outreach placeholder — replace with an authorised Living Water photograph" loading="lazy" />
+          <img src="assets/images/web/community-christmas.webp" alt="Church community gathered together at a Christmas celebration" loading="lazy" />
           <div class="impact-card"><strong>Love in action</strong><p>“Providing both physical and spiritual nourishment” is part of Living Water’s stated local community purpose.</p></div>
         </div>
       </div>
@@ -202,15 +276,14 @@
     <section class="section pastor-section">
       <div class="container pastor-grid">
         <div class="pastor-photo" data-reveal>
-          <!-- <img src="assets/images/pastor-placeholder.svg" alt="Portrait placeholder for Pastor Dr Ken Duru — replace with an authorised photograph" loading="lazy" /> -->
-          <img src="assets/images/pastor-placeholder.jpeg" alt="Pastor Dr Ken Duru — replace with an authorised photograph" loading="lazy" />
+          <img src="assets/images/web/pastor-ken-duru.webp" alt="Resident pastor speaking from the church lectern" loading="lazy" decoding="async" />
         </div>
         <div class="pastor-copy" data-reveal>
           <p class="eyebrow">Leadership</p>
           <h2>Welcome from our resident pastor.</h2>
           <p class="section-lead">Pastor Dr Ken Duru is publicly identified by Living Water Middlesbrough as the resident pastor.</p>
-          <p class="placeholder-copy">Replace this paragraph with an approved personal welcome from Pastor Ken: a short message to newcomers, the church’s heart for Middlesbrough and an invitation to worship with the Living Water family.</p>
-          <span class="signature-placeholder">Pastor Dr Ken Duru</span>
+          <p class="pastor-note">Living Water welcomes newcomers, families, students and residents of Middlesbrough to worship, learn, pray and grow together in a Christ-centred church community.</p>
+          <span class="pastor-signature">Pastor Dr Ken Duru</span>
           <small>Resident Pastor · RCCG Living Water Middlesbrough</small>
         </div>
       </div>
@@ -220,14 +293,14 @@
       <div class="container">
         <div class="section-heading inline-heading" data-reveal>
           <div><p class="eyebrow">Watch & listen</p><h2>Take the message with you.</h2></div>
-          <a class="button button-outline" data-youtube-link target="_blank" rel="noopener">Visit YouTube</a>
+          <a href="https://www.youtube.com/@rccglivingwatermiddlesbrou8286/streams" class="button button-outline" data-youtube-link target="_blank" rel="noopener">Visit YouTube</a>
         </div>
         <div class="messages-grid">
           <article class="featured-message" data-reveal>
             <div class="video-poster">
-              <img src="assets/images/sermon-placeholder.jpeg" alt="Sermon video thumbnail placeholder" loading="lazy" />
-              <a class="play-button" data-youtube-link target="_blank" rel="noopener" aria-label="Watch on YouTube">▶</a>
-              <span>Latest message placeholder</span>
+              <img src="assets/images/web/sermon-pastor.webp" alt="Pastor preaching during a Living Water service" loading="lazy" />
+              <a href="https://www.youtube.com/@rccglivingwatermiddlesbrou8286/streams" class="play-button" data-youtube-link target="_blank" rel="noopener" aria-label="Watch on YouTube">▶</a>
+              <span>Watch recent services</span>
             </div>
             <div class="message-copy"><p class="kicker">Sunday message</p><h3>Life Transforming Sermons</h3><p>Rewatch our latest sermon on YouTube.</p></div>
           </article>
@@ -254,10 +327,10 @@
           <p>Generosity supports worship, discipleship, community care, outreach and the practical work of the church.</p>
         </div>
         <div class="give-card">
-          <span class="secure-chip">Church-admin details required</span>
-          <h3>Online giving</h3>
-          <p>No bank or payment information has been guessed. Add the church’s approved giving method before publishing this feature.</p>
-          <a class="button button-primary" data-give-link href="#contact">Ask about giving</a>
+          <span class="secure-chip">Giving information</span>
+          <h3>Support the work of Living Water</h3>
+          <p>For the church’s current approved giving method or bank details, please contact the church team directly.</p>
+          <a class="button button-primary" data-give-link href="#contact">Contact us about giving</a>
           <small>Registered charity no. <strong>1194680</strong></small>
         </div>
       </div>
@@ -276,16 +349,17 @@
             <div><dt>Questions?</dt><dd><a href="tel:+447904776789">07904 776789</a> · <a href="mailto:rccglwfollowupteam@rccglwpm.org.uk">rccglwfollowupteam@rccglwpm.org.uk</a></dd></div>
           </dl>
           <div class="button-row">
-            <a class="button button-primary" data-directions-link target="_blank" rel="noopener">Get directions</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=109B+Marton+Road%2C+Middlesbrough%2C+TS1+2DU" class="button button-primary" data-directions-link target="_blank" rel="noopener">Get directions</a>
             <a class="button button-outline" href="#contact">Tell us you’re coming</a>
+            <a href="https://evaextra.com/checkin" class="button button-outline" data-checkin-link target="_blank" rel="noopener">Mark attendance ↗</a>
           </div>
         </div>
         <div class="map-card" data-reveal>
-          <div class="map-placeholder" role="img" aria-label="Stylised map placeholder showing the church location in Middlesbrough">
-            <img src="assets/images/map-placeholder.png" alt="Stylised Middlesbrough location map placeholder" loading="lazy" />
+          <div class="map-visual" role="img" aria-label="Street view of the church location on Marton Road in Middlesbrough">
+            <img src="assets/images/web/church-location.webp" alt="Church location on Marton Road in Middlesbrough" loading="lazy" decoding="async" />
             <span class="map-pin"><i></i><strong>Living Water</strong><small>109B Marton Road</small></span>
           </div>
-          <div class="map-footer"><span>In the heart of Middlesbrough</span><a data-directions-link target="_blank" rel="noopener">Open maps →</a></div>
+          <div class="map-footer"><span>In the heart of Middlesbrough</span><a href="https://www.google.com/maps/search/?api=1&query=109B+Marton+Road%2C+Middlesbrough%2C+TS1+2DU" data-directions-link target="_blank" rel="noopener">Open maps →</a></div>
         </div>
       </div>
     </section>
@@ -306,17 +380,22 @@
           <label>Email<input type="email" name="email" autocomplete="email" required /></label>
           <label>How can we help?<select name="topic"><option>General enquiry</option><option>Prayer request</option><option>Plan a visit</option><option>Pastoral care</option><option>Community support</option><option>Volunteer / ministry</option><option>Giving</option></select></label>
           <label>Message<textarea name="message" rows="5" required></textarea></label>
-          <label class="check-field"><input type="checkbox" name="consent" required /><span>I consent to the church using these details to respond to this enquiry.</span></label>
+          <label class="check-field"><input type="checkbox" name="consent" required /><span>I have read the <a href="privacy.html">privacy notice</a> and understand that these details will be used to respond to this enquiry.</span></label>
           <button class="button button-primary button-large" type="submit">Send message</button>
-          <p class="form-note" data-form-note>This starter site uses a safe mail fallback until a form provider endpoint is configured.</p>
+          <p class="form-note" data-form-note>Submitting currently opens your email application; this website does not store the message itself.</p>
         </form>
       </div>
     </section>
 
-    <section class="newsletter-section">
+    <section class="newsletter-section" aria-label="Stay connected">
       <div class="container newsletter-shell" data-reveal>
-        <div><p class="eyebrow">Stay connected</p><h2>Church news, events and encouragement.</h2></div>
-        <form class="newsletter-form" data-newsletter-form><label class="sr-only" for="newsletter-email">Email address</label><input id="newsletter-email" type="email" placeholder="you@example.com" required /><button class="button button-dark" type="submit">Join updates</button></form>
+        <div><p class="eyebrow">Stay connected</p><h2>Church news, services and community.</h2></div>
+        <div class="connection-actions">
+          <a href="https://www.facebook.com/RCCGLWMiddlesbrough/" class="button button-dark" data-facebook-link target="_blank" rel="noopener">Facebook ↗</a>
+          <a href="https://www.instagram.com/rccglwpm/" class="button button-dark" data-instagram-link target="_blank" rel="noopener">Instagram ↗</a>
+          <a href="https://www.youtube.com/@rccglivingwatermiddlesbrou8286/streams" class="button button-dark" data-youtube-link target="_blank" rel="noopener">YouTube ↗</a>
+          <a href="https://evaextra.com/checkin" class="button button-dark connection-checkin" data-checkin-link target="_blank" rel="noopener">Check in ✓</a>
+        </div>
       </div>
     </section>
   </main>
@@ -326,14 +405,15 @@
       <div class="footer-brand">
         <a class="brand brand-light" href="#home"><img src="assets/images/logo-placeholder.svg" alt="" width="52" height="52" /><span class="brand-copy"><strong>Living Water</strong><small>RCCG · Middlesbrough</small></span></a>
         <p>A Christian church in Middlesbrough, part of the Redeemed Christian Church of God.</p>
-        <div class="social-row"><a data-facebook-link target="_blank" rel="noopener" aria-label="Facebook">f</a><a data-instagram-link target="_blank" rel="noopener" aria-label="Instagram">◎</a><a data-youtube-link target="_blank" rel="noopener" aria-label="YouTube">▶</a></div>
+        <div class="social-row"><a href="https://www.facebook.com/RCCGLWMiddlesbrough/" data-facebook-link target="_blank" rel="noopener" aria-label="Facebook">f</a><a href="https://www.instagram.com/rccglwpm/" data-instagram-link target="_blank" rel="noopener" aria-label="Instagram">◎</a><a href="https://www.youtube.com/@rccglivingwatermiddlesbrou8286/streams" data-youtube-link target="_blank" rel="noopener" aria-label="YouTube">▶</a></div>
       </div>
-      <div><h3>Explore</h3><a href="#new-here">New here</a><a href="#about">About us</a><a href="#services">Services</a><a href="#ministries">Ministries</a><a href="#messages">Messages</a></div>
-      <div><h3>Connect</h3><a href="#community">Prayer & care</a><a href="#events">Events</a><a href="#give">Give</a><a href="#visit">Plan a visit</a><a href="#contact">Contact</a></div>
+      <div><h3>Explore</h3><a href="#new-here">New here</a><a href="#about">About us</a><a href="#services">Services</a><a href="#ministries">Ministries</a><a href="#gallery">Gallery</a><a href="#messages">Messages</a></div>
+      <div><h3>Connect</h3><a href="https://evaextra.com/checkin" data-checkin-link target="_blank" rel="noopener">Check in / attendance ↗</a><a href="#community">Prayer & care</a><a href="#events">Events</a><a href="#give">Give</a><a href="#visit">Plan a visit</a><a href="#contact">Contact</a></div>
       <div><h3>Find us</h3><p>109B Marton Road<br />Middlesbrough<br />TS1 2DU</p><a href="tel:+447904776789">07904 776789</a><a href="mailto:rccglwfollowupteam@rccglwpm.org.uk">rccglwfollowupteam@rccglwpm.org.uk</a></div>
     </div>
-    <div class="container footer-bottom"><p>© <span data-year></span> RCCG Living Water Middlesbrough. Registered charity no. 1194680.</p><div><a href="privacy.html">Privacy</a><a href="safeguarding.html">Safeguarding</a><a href="accessibility.html">Accessibility</a></div></div>
+    <div class="container footer-bottom"><div class="footer-legal"><p>© <span data-year></span> RCCG Living Water Middlesbrough. Registered charity no. 1194680.</p><p class="powered-by">Powered by <a href="https://evaextra.com/" data-evaextra-link target="_blank" rel="noopener">evaextra.com</a></p></div><div><a href="privacy.html">Privacy</a><a href="safeguarding.html">Safeguarding</a><a href="accessibility.html">Accessibility</a></div></div>
   </footer>
+  <a href="https://evaextra.com/checkin" class="attendance-fab" data-checkin-link target="_blank" rel="noopener" aria-label="Open EvaeXtra to mark attendance"><span>✓</span><strong>Check in</strong><small>Mark attendance</small></a>
   <div class="toast" data-toast role="status" aria-live="polite"></div>
 </body>
 </html>

@@ -40,11 +40,4 @@ export function initForms() {
     });
   }
 
-  const newsletter = document.querySelector('[data-newsletter-form]');
-  if (newsletter) {
-    newsletter.addEventListener('submit', event => {
-      event.preventDefault();
-      showToast('Newsletter integration placeholder: connect your preferred mailing platform before launch.');
-    });
-  }
 }

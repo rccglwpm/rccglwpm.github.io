@@ -1,40 +1,45 @@
-# Public information sources used
+# Public information and content provenance
 
-Checked in August 2026. These sources were used only to populate information that appears to be publicly associated with RCCG Living Water Middlesbrough. Church leadership should confirm every detail before launch.
+Reviewed for the August 2026 enhancement. Public information is useful for checking context, but church leadership should treat the content currently supplied in this repository as the working source and confirm operational details before launch.
 
-## Current public details used in the starter site
+## Working details used by the website
 
-- Church: RCCG Living Water Middlesbrough / RCCG Living Waters Middlesbrough
-- Current worship venue used in recent public posts: **109B Marton Road, Middlesbrough, TS1 2DU**
-- Sunday service: **10:00 AM**
-- Digging Deep / Bible study: **Wednesday, 6:00 PM**
-- Corporate prayer: **Friday, 6:00 PM**
-- Public telephone: **07904 776789**
-- Public email from Charity Commission listing: **rccglwpm@gmail.com**
-- Resident pastor publicly identified as **Pastor Dr Ken Duru**
-- Registered charity number: **1194680**
-- Publicly listed ministries include children, men, women, youth, choir, drama, media/technical, Sunday school, food bank/community care and evangelism.
+- Church: RCCG Living Water Middlesbrough
+- Worship venue shown by the project: **109B Marton Road, Middlesbrough, TS1 2DU**
+- Sunday Worship: **Sunday, 10:00 AM**
+- Digging Deep: **Wednesday, 6:00 PM**
+- Corporate Prayer: **Friday, 6:00 PM**
+- Telephone: **07904 776789**
+- Website contact email: **rccglwfollowupteam@rccglwpm.org.uk**
+- Resident pastor shown by the project: **Pastor Dr Ken Duru**
+- Registered charity number shown by the project: **1194680**
+- Attendance/check-in: **https://evaextra.com/checkin**
 
-## Sources
+## Public sources consulted during development
 
 1. Existing church website: https://rccglwpm.org.uk/
-2. Existing church "About" page: https://rccglwpm.org.uk/about/
+2. Existing church About page: https://rccglwpm.org.uk/about/
 3. Existing church ministers page: https://rccglwpm.org.uk/team/
 4. Existing children ministry page: https://rccglwpm.org.uk/about-2/
 5. Facebook: https://www.facebook.com/RCCGLWMiddlesbrough/
 6. Instagram: https://www.instagram.com/rccglwpm/
 7. YouTube: https://www.youtube.com/@rccglivingwatermiddlesbrou8286
-8. Charity Commission (charity number 1194680): https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/5178521/charity-overview
+8. Charity Commission, charity number 1194680: https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/5178521/charity-overview
+9. EvaeXtra attendance entry point: https://evaextra.com/checkin
 
+## User-supplied assets
 
-## Content intentionally not inferred
+The photographic assets in the uploaded project are treated as user/church-supplied content. The enhancement pass does not infer the identity of people in photographs beyond information already supplied elsewhere in the project. Optimised WebP delivery copies have been created with image metadata removed.
 
-The following are left as placeholders rather than guessed:
+Church leadership should confirm that it has appropriate permission to publish every photograph, with particular care for children and young people.
 
-- Bank details, payment processor or online giving link
-- Safeguarding lead and safeguarding contact route
-- Formal data protection/controller wording
+## Information intentionally not invented
+
+The following remain dependent on church-approved information rather than assumptions:
+
+- Bank details, payment processor or online giving URL
+- Safeguarding lead and dedicated safeguarding contact route
+- Final data-controller wording and retention arrangements
 - Current event calendar beyond recurring public service times
-- Pastor biography/welcome text beyond public role identification
-- Authorised photographs of the church, pastor, congregation and ministries
-- Newsletter provider and form-processing endpoint
+- Detailed pastor biography or personal welcome quotation
+- Hosted form processor or other third-party data processor
