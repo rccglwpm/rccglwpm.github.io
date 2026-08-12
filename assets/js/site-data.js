@@ -116,7 +116,7 @@ export const siteData = {
       text: 'Come as you are and discover a community where you can grow.'
     }
        {
-      image: 'assets/images/web/welcome-family-new.webp',
+      image: 'assets/images/web/welcome-family-new.jpg',
       alt: 'A family arriving together near the church community',
       eyebrow: 'Belonging',
       title: 'A place for the whole family',
