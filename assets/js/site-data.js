@@ -122,13 +122,13 @@ export const siteData = {
       title: 'A place for the whole family',
       text: 'Come as you are and discover a community where you can grow.'
     }
-     {
-      image: 'assets/images/web/pastor-mrs.jpg',
-      alt: 'A family arriving together near the church community',
-      eyebrow: 'Belonging',
-      title: 'A place for the whole family',
-      text: 'Come as you are and discover a community where you can grow.'
-    }
+    //  {
+    //   image: 'assets/images/web/pastor-mrs.jpg',
+    //   alt: 'A family arriving together near the church community',
+    //   eyebrow: 'Belonging',
+    //   title: 'A place for the whole family',
+    //   text: 'Come as you are and discover a community where you can grow.'
+    // }
   ],
   messages: [
     { label: 'SERMON', title: 'Listen to Sunday messages', meta: 'YouTube · full-length Sunday services', url: 'https://www.youtube.com/@rccglivingwatermiddlesbrou8286/streams' },
